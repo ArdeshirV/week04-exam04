@@ -24,6 +24,7 @@ WITH RECURSIVE dates (created_at) AS (
                 orders
         )
 )
+
 SELECT
     dates.created_at,
     COALESCE(SUM(total), 0) AS total
